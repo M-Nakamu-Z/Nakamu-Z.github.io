@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <link href="mitame.css" rel="stylesheet">
     <title>Nakamu-Zのポートフォリオ</title>
   </head>
   <body>
@@ -11,82 +11,70 @@
     <img src="profile_image.png">
     <h2>About</h2>
     <p>
-      簡単な自己紹介やアピール。<br>
-      どんなことができる、したいのか。
+      最終課題として実施<br>
+      あなたのいいところ診断を末尾に追加
     </p>
 
     <h3>Profile</h3>
     <ul>
-      <li>名前（ハンドルネームも可）</li>
-      <li>所在地（県や市までで OK）</li>
-      <li>得意領域（Web 開発、サーバ運用など）</li>
+      <li>Nakamu-Z</li>
+      <li>Tokyo, Japan</li>
     </ul>
 
     <h3>Skills</h3>
     <table>
       <tr>
-        <th>OS</th>
-        <td>Windows, Ubuntu など</td>
+        <th>楽器</th>
+        <td>ドラム、ベース</td>
       </tr>
       <tr>
-        <th>Engine, Frameworks</th>
-        <td>Node.js, Express など</td>
-      </tr>
-      <tr>
-        <th>Tool, MiddleWare</th>
-        <td>Git, PostgreSQL など</td>
+        <th>DTM</th>
+        <td>Cubase（勉強中）</td>
       </tr>
       <tr>
         <th>資格・免許</th>
-        <td>情報処理技術者、LPIC など</td>
-      </tr>
-    </table>
-
-    <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
-    <ul>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
-        <ul>
-          <li><a href="https://example.com/">作品 1</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <h3>Contact</h3>
-    <p>連絡先や SNS のアカウントを書きましょう。</p>
-    <ul>
-      <li><a href="mailto:name@example.com">Mail</a></li>
-      <li><a href="https://twitter.com/n_yobikou">X(旧 Twitter)</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
-
-    <h3>History</h3>
-    <p>学歴、職歴、アルバイト、インターン経験など。</p>
-    <table>
-      <tr>
-        <th>2019 年</th>
-        <td><a href="https://dwango.co.jp/">株式会社ドワンゴ</a> 入社</td>
-      </tr>
-      <tr>
-        <th>2018 年</th>
-        <td>学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/">N高等学校</a> 卒業</td>
-      </tr>
-      <tr>
-        <th>20XX 年</th>
-        <td>表彰、受賞歴、メディア掲載記事などあれば</td>
+        <td>電験3種、乙四、珠算検定一級</td>
       </tr>
     </table>
     
-    <h3>好きな動画</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WkqPh70G3gY?si=rXtDo0ZpEXmeidln" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h3>History</h3>
+    <table>
+      <tr>
+        <th>2023 年</th>
+        <td>A社 転職</td>
+      </tr>
+      <tr>
+        <th>2019 年</th>
+        <td>T社 入社</td>
+      </tr>
+    </table>
 
+    <h3>好きな動画</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RfybC51_6xY?si=t7Ui2Q-g7ecxwzIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <h3>Open Processing</h3>
     <iframe src="https://openprocessing.org/sketch/3051036/embed/" width="400" height="400"></iframe>
     
+    <h3>あなたのいいところ診断</h3>
+
+    <div class="container pt-5">
+      <p>診断したい名前を入れて下さい</p>
+      <div class="row">
+        <div class="col-sm-9 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control " id="user-name" size="40" maxlength="20">
+            <button class="btn btn-primary" id="assessment">診断する</button>
+         </div>
+       </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-9">
+          <div id="result-area"></div>
+        </div>
+      </div>
+      <div id="tweet-area" class="mt-3"></div>
+     </div>
+     <script src ="assessment.js"></script>
+
   </body>
 </html>
